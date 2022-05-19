@@ -12,7 +12,7 @@ type Image = {
 
 export type CardProps = {
   id: number
-  image: Image
+  image?: Image
   title: string
   content: string
   isActive: boolean
@@ -28,7 +28,7 @@ export const Card = ({ data: { image, title, id, isActive, isLastCard } }: CardN
     <picture className="card__image">
       <Image
         src={image?.src || '/assets/quantum/quantum-computing.jpg'}
-        alt={image.alt}
+        alt={image?.alt}
         layout="fill"
         objectFit="cover"
         draggable="false"
