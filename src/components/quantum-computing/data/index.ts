@@ -1,11 +1,11 @@
 import { Edge, Node } from 'react-flow-renderer'
-import { CardProps } from '../card'
+import { NodeCardProps } from '../node-card'
 import contentsData from './contents.json'
 import contentTree from './contentTree.json'
 
 export type NodesAndEdges = {
-  contentNodes: Node<CardProps>[]
-  contentEdges: Edge<CardProps>[]
+  contentNodes: Node<NodeCardProps>[]
+  contentEdges: Edge<NodeCardProps>[]
 }
 
 type Translate = {
@@ -53,7 +53,7 @@ export const makeNodesAndEdges = () => {
   for (const [index, { id, nodes }] of contentTree.entries()) {
     const { path, translate, ...rest } = contentsData.find(content => content.id === id)!
 
-    const node: Node<CardProps> = {
+    const node: Node<NodeCardProps> = {
       id: id.toString(),
       type: 'card',
       data: {

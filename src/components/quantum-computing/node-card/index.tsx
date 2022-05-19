@@ -10,7 +10,7 @@ type Image = {
   height?: string | number
 }
 
-export type CardProps = {
+export type NodeCardProps = {
   id: number
   image?: Image
   title: string
@@ -20,10 +20,10 @@ export type CardProps = {
   nodes: number[]
 }
 type CardNode = {
-  data: CardProps
+  data: NodeCardProps
 }
 
-export const Card = ({ data: { image, title, id, isActive, isLastCard } }: CardNode) => (
+export const NodeCard = ({ data: { image, title, id, isActive, isLastCard } }: CardNode) => (
   <Trigger className={card({ isActive })} disabled={!isActive}>
     <picture className="card__image">
       <Image

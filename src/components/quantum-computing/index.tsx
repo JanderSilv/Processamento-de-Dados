@@ -12,7 +12,7 @@ import ReactFlow, {
 } from 'react-flow-renderer'
 
 import { Dialog } from '../dialog'
-import { Card, CardProps } from './card'
+import { NodeCard, NodeCardProps } from './node-card'
 import { NodesAndEdges } from './data'
 import { quantumComputingClass } from './styles'
 import { NodeDialogContent } from './node-dialog-content'
@@ -21,18 +21,18 @@ type QuantumComputingProps = {
   nodesAndEdges: NodesAndEdges
 }
 
-const nodeTypes = { card: Card }
+const nodeTypes = { card: NodeCard }
 
 export const QuantumComputing = ({ nodesAndEdges }: QuantumComputingProps) => {
   const { contentEdges, contentNodes } = nodesAndEdges
 
   const [nodes, setNodes, onNodesChange] = useNodesState(contentNodes)
   const [edges, setEdges, onEdgesChange] = useEdgesState(contentEdges)
-  const [selectedNode, setSelectedNode] = useState<CardProps | null>(null)
+  const [selectedNode, setSelectedNode] = useState<NodeCardProps | null>(null)
 
   const onConnect: OnConnect = params => setEdges(eds => addEdge(params, eds))
   const onInit: OnInit = reactFlowInstance => console.log('flow loaded:', reactFlowInstance)
-  const handleClick = (node: CardProps) => {
+  const handleClick = (node: NodeCardProps) => {
     setSelectedNode(node)
     let nodes: number[] = []
     setNodes(ns => {

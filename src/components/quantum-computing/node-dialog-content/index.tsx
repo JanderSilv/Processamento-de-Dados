@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 
-import { CardProps } from '../card'
+import { NodeCardProps } from '../node-card'
 import { nodeDialogContent } from './styles'
 
 type ContentCarouselProps = {
@@ -25,7 +25,7 @@ const defaultImage = {
   height: 697,
 }
 
-export const NodeDialogContent = ({ content, image, title }: CardProps) => {
+export const NodeDialogContent = ({ content, image, title }: NodeCardProps) => {
   const imageData = image || defaultImage
   return (
     <section className={nodeDialogContent()}>
