@@ -14,7 +14,7 @@ export type CardProps = {
   id: number
   image?: Image
   title: string
-  content: string
+  content: string | string[]
   isActive: boolean
   isLastCard: boolean
   nodes: number[]

@@ -22,14 +22,36 @@ export const nodeDialogContent = css({
 
   '& > main': {
     flex: 1.5,
+    width: '100%',
     '&> h2': {
       fontSize: '$6',
     },
 
-    '& > p': {
+    '& p': {
       marginTop: '$4',
       fontSize: '$4',
-      lineHeight: 1.25,
+      lineHeight: '27px',
+      textAlign: 'left',
+    },
+
+    '& div.iframe-container': {
+      overflow: 'hidden',
+      position: 'relative',
+
+      '&::after': {
+        content: '""',
+        paddingTop: '56.25%',
+        display: 'block',
+      },
+
+      '&& > iframe': {
+        width: '100%',
+        height: '100%',
+        margin: 0,
+        position: 'absolute',
+        top: '0',
+        left: '0',
+      },
     },
   },
 })
