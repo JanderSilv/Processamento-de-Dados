@@ -1,47 +1,33 @@
 // deps
-import React from "react";
+import React from 'react'
 
 // components
-import { Card } from "./components";
+import { Card } from './components'
 
 // utils
-import { colors } from "./utils";
+import { colors } from './utils'
 
 // styles
-import {
-  Container,
-  Header,
-  Title,
-  Text,
-  I,
-  U,
-  B,
-  ProcessorImage,
-  Cards,
-  Navigator,
-  NavItem,
-} from "./styles";
+import { Container, Header, Title, Text, I, U, B, ProcessorImage, Cards, Navigator, NavItem } from './styles'
 
 // constants
-import { expandedSubjects, subjectColors } from "./constants";
+import { expandedSubjects, subjectColors } from './constants'
 
 // assets
-import { flynn } from "./assets";
+import { flynn } from './assets'
 
 // enums
-import { Subjects } from "./enums";
+import { Subjects } from './enums'
 
 export function ParallelismSection() {
-  const [currentSubject, setCurrentSubject] = React.useState<Subjects>(
-    Subjects.FLYNNS_TAXONOMY
-  );
+  const [currentSubject, setCurrentSubject] = React.useState<Subjects>()
 
   function openFlynnsTaxonomySubject() {
-    setCurrentSubject(Subjects.FLYNNS_TAXONOMY);
+    setCurrentSubject(Subjects.FLYNNS_TAXONOMY)
   }
 
   function renderSubjectsNavigator() {
-    if (!currentSubject) return null;
+    if (!currentSubject) return null
 
     return (
       <Navigator>
@@ -54,7 +40,7 @@ export function ParallelismSection() {
           />
         ))}
       </Navigator>
-    );
+    )
   }
 
   function renderBody() {
@@ -70,11 +56,11 @@ export function ParallelismSection() {
           />
           {/* @todo - adicionem seus cards aq, companheiros */}
         </Cards>
-      );
+      )
 
-    const ExpandedSubject = expandedSubjects[currentSubject];
+    const ExpandedSubject = expandedSubjects[currentSubject]
 
-    return <ExpandedSubject />;
+    return <ExpandedSubject />
   }
 
   return (
@@ -85,10 +71,9 @@ export function ParallelismSection() {
           <I>Dividir para conquistar!</I>
         </Text>
         <Text>
-          Na computação, o paralelismo é uma estratégia de processamento de
-          dados em que <U>um problema é dividido em partes</U> que serão{" "}
-          <B>resolvidas paralelamente</B>, diminuindo em muitos casos o tempo de
-          execução das tarefas
+          Na computação, o paralelismo é uma estratégia de processamento de dados em que{' '}
+          <U>um problema é dividido em partes</U> que serão <B>resolvidas paralelamente</B>, diminuindo em muitos casos
+          o tempo de execução das tarefas
         </Text>
 
         {renderSubjectsNavigator()}
@@ -98,5 +83,5 @@ export function ParallelismSection() {
 
       {renderBody()}
     </Container>
-  );
+  )
 }
