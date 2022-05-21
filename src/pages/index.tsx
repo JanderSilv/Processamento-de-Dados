@@ -1,5 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next'
-import { QuantumComputing } from 'src/components'
+import { ParallelismSection, QuantumComputing } from 'src/components'
+import {} from 'src/components/parallelism'
 import { makeNodesAndEdges, NodesAndEdges } from 'src/components/quantum-computing/data'
 
 type HomeProps = {
@@ -8,7 +9,12 @@ type HomeProps = {
 
 const Home: NextPage<HomeProps> = props => {
   const { nodesAndEdges } = props
-  return <QuantumComputing nodesAndEdges={nodesAndEdges} />
+  return (
+    <>
+      <ParallelismSection />
+      <QuantumComputing nodesAndEdges={nodesAndEdges} />
+    </>
+  )
 }
 
 export default Home
