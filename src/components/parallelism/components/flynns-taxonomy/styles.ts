@@ -4,9 +4,6 @@ import styled from 'styled-components'
 // components
 import { ExpandedSubject } from '..'
 
-// assets
-import { flynn } from '../../assets'
-
 export const Container = styled(ExpandedSubject)`
   width: 100%;
 
@@ -17,6 +14,7 @@ export const Container = styled(ExpandedSubject)`
 `
 
 export const Text = styled.div`
+  height: max-content;
   padding-right: 3rem;
 
   grid-area: text;

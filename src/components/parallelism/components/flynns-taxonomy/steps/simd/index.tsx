@@ -2,7 +2,8 @@
 import { ImageContainer, Text, Image } from '../../styles'
 
 // assets
-import { gpus } from '../../assets'
+import { gpus, simd } from '../../assets'
+import { ParadinhaContainer } from './styles'
 
 export function SIMDStep() {
   return (
@@ -23,6 +24,10 @@ export function SIMDStep() {
         <p>
           Esse tipo de arquitetura é muito comum em <b>GPUs</b>, que lidam com <b>cálculos matriciais</b>.
         </p>
+
+        <ParadinhaContainer>
+          <img src={simd.src} alt="SIMD" />
+        </ParadinhaContainer>
       </Text>
 
       <ImageContainer>

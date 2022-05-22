@@ -2,7 +2,8 @@
 import { ImageContainer, Text, Image } from '../../styles'
 
 // assets
-import { spaceShuttle } from '../../assets'
+import { misd, spaceShuttle } from '../../assets'
+import { ParadinhaContainer } from './styles'
 
 export function MISDStep() {
   return (
@@ -18,6 +19,10 @@ export function MISDStep() {
           <ins>várias instruções operam em um fluxo de dados</ins>. Pode ser utilizada para <b>tolerância a falhas</b>,
           em que sistemas heterogêneos operam em um mesmo fluxo de dados e os resultados devem coincidir.
         </p>
+
+        <ParadinhaContainer>
+          <img src={misd.src} alt="MISD" />
+        </ParadinhaContainer>
       </Text>
 
       <ImageContainer>

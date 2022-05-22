@@ -2,7 +2,8 @@
 import { ImageContainer, Text, Image } from '../../styles'
 
 // assets
-import { intelPhi } from '../../assets'
+import { intelPhi, mimd } from '../../assets'
+import { ParadinhaContainer } from './styles'
 
 export function MIMDStep() {
   return (
@@ -18,6 +19,10 @@ export function MIMDStep() {
           <ins>vários processadores diferentes executam instruções diferentes com dados diferentes</ins>. Esses
           processos podem tanto ter uma <b>memória compartilhada</b> quanto uma <b>memória distribuída</b>.
         </p>
+
+        <ParadinhaContainer>
+          <img src={mimd.src} alt="MIMD" />
+        </ParadinhaContainer>
       </Text>
 
       <ImageContainer>

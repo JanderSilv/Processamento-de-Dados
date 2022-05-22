@@ -2,7 +2,8 @@
 import { ImageContainer, Text, Image } from '../../styles'
 
 // assets
-import { ibmComputer } from '../../assets'
+import { ibmComputer, sisd } from '../../assets'
+import { ParadinhaContainer } from './styles'
 
 export function SISDStep() {
   return (
@@ -20,6 +21,10 @@ export function SISDStep() {
           Em computadores desse tipo, cada instrução vai ser <b>executada uma após a outra</b>, sobre um único conjunto
           de dados cada.
         </p>
+
+        <ParadinhaContainer>
+          <img src={sisd.src} alt="SISD" />
+        </ParadinhaContainer>
       </Text>
 
       <ImageContainer>
