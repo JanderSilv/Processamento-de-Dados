@@ -1,15 +1,15 @@
 // deps
-import React from "react";
+import React from 'react'
 
 // components
-import { FlynnsTaxonomySubject } from "../components";
+import { FlynnsTaxonomy } from '../components'
 
 // enums
-import { Subjects } from "../enums";
+import { Subjects } from '../enums'
 
-export const expandedSubjects: Record<Subjects, () => JSX.Element> = {
-  [Subjects.FLYNNS_TAXONOMY]: FlynnsTaxonomySubject,
-  [Subjects.MISSOS_SUBJECT]: FlynnsTaxonomySubject, // @todo - mudar pro assunto de misso
-  [Subjects.PARALLELISM_VS_CONCURRENCE]: FlynnsTaxonomySubject, // @todo - mudar pro assunto de riccardo
-  [Subjects.CPU_VS_GPU]: FlynnsTaxonomySubject, // @todo - mudar pro assunto de comuna
-};
+export const expandedSubjects: Record<Subjects, React.FC<any>> = {
+  [Subjects.FLYNNS_TAXONOMY]: FlynnsTaxonomy,
+  [Subjects.MISSOS_SUBJECT]: FlynnsTaxonomy, // @todo - mudar pro assunto de misso
+  [Subjects.PARALLELISM_VS_CONCURRENCE]: FlynnsTaxonomy, // @todo - mudar pro assunto de riccardo
+  [Subjects.CPU_VS_GPU]: FlynnsTaxonomy, // @todo - mudar pro assunto de comuna
+}

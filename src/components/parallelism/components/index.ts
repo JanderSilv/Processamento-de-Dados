@@ -1,2 +1,3 @@
-export { Card } from "./card";
-export { FlynnsTaxonomySubject } from "./flynns-taxonomy-subject";
+export { Card } from './card'
+export { ExpandedSubject } from './expanded-subject'
+export { FlynnsTaxonomy } from './flynns-taxonomy'
