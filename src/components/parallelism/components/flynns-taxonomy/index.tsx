@@ -23,7 +23,7 @@ export function FlynnsTaxonomy(props: FlynnsTaxonomyProps) {
     <Container
       color="orange"
       currentPage={currentPage}
-      numberOfPages={5}
+      numberOfPages={steps.length}
       onGoBackButtonClick={onGoBackButtonClick}
       onClickPrevious={handlePrevious}
       onClickNext={handleNext}

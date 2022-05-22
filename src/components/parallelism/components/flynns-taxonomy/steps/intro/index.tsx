@@ -3,6 +3,7 @@ import { ImageContainer, Text, Image } from '../../styles'
 
 // assets
 import { flynn } from 'src/components/parallelism/assets'
+import { Table } from './styles'
 
 export function IntroStep() {
   return (
@@ -20,6 +21,24 @@ export function IntroStep() {
         </p>
 
         <h2>Os 4 tipos</h2>
+
+        <Table>
+          <tr>
+            <th className="dark"></th>
+            <th className="normal">Single Instruction</th>
+            <th className="light">Multiple Instruction</th>
+          </tr>
+          <tr>
+            <th className="normal">Single Data</th>
+            <td className="light">SISD</td>
+            <td className="normal">MISD</td>
+          </tr>
+          <tr>
+            <th className="light">Multiple Data</th>
+            <td className="normal">SIMD</td>
+            <td className="light">MIMD</td>
+          </tr>
+        </Table>
       </Text>
 
       <ImageContainer>
