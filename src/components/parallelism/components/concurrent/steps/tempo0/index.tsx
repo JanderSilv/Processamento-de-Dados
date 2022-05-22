@@ -11,10 +11,11 @@ export function Tempo0() {
         <h1>Paralelismo e Concorrência</h1>
 
         <p>
-            Nesse exemplo, cada processo está sendo executado de forma paralela mas cada um está precisando de um recurso diferente então são independentes, não existindo concorrência.
+            Nesse exemplo, cada tarefa está sendo executado de forma paralela mas cada um está precisando de um recurso diferente, eles são executados de forma simultanea, isto é, 
+            com pequenos intervalos de tempo entre eles.
         </p>
         <p>
-            Mas o que será que acontece quando dois processos estão precisando usar o mesmo recurso?
+            Mas o que será que acontece quando duas tarefas estão precisando usar o mesmo recurso?
         </p>
       </Text>
 

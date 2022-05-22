@@ -8,13 +8,13 @@ export function IntroConcurrent() {
   return (
     <>
       <Text>
-        <h1>Paralelismo e Concorrência</h1>
+        <h1>Concorrência</h1>
 
         <p>
-        No paralelismo temos um conceito que se chama Concorrência, visto que uma tarefa é processada por muitos núcleos ao mesmo tempo, é normal de que eles usem o mesmo recurso e então gera uma concorrência.
+        Muitas pessoas não entendem a diferença de Concorrência para Paralelismo, por isso fizemos uma ilustração que talvez possa te ajudar no entendimento.
         </p>
         <p>
-        Como a imagem a direita exemplifica, duas pessoas que representam os núcleos estão brigando pelo mesmo recurso podendo causar alguns problemas como dead-lock.
+        Para começar, olhe a imagem na direita, duas pessoas estão brigando pelo mesmo recurso isto é eles estão concorrendo...
         </p>
       </Text>
 

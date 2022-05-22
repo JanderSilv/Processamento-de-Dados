@@ -3,5 +3,8 @@ import { default as processorIntel } from "./processor-intel.png";
 import { default as concorrencia } from "./concorrencia.png";
 import { default as introConcorrencia } from "./intro_concorrencia.png";
 import { default as tempo0 } from "./tempo0.png";
+import { default as tempo1 } from "./tempo1.png";
+import { default as tempo2 } from "./tempo2.png";
+import { default as tempo3 } from "./tempo3.png";
 
-export { flynn, processorIntel, concorrencia, introConcorrencia, tempo0 };
+export { flynn, processorIntel, concorrencia, introConcorrencia, tempo0, tempo1, tempo2, tempo3 };

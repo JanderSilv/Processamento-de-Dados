@@ -8,16 +8,14 @@ export function Ilustracao() {
   return (
     <>
       <Text>
-        <h1>Paralelismo e Concorrência</h1>
+        <h1>Concorrência</h1>
         <p>
-        Para entender melhor esse assunto vamos fazer uso de algumas ilustrações.
-
-        Desta forma, leia a figura ao lado e fique atento ao significado de cada uma.
+        Leia a figura ao lado e fique atento ao significado de cada uma pois será necessário o entendimento para os próximos passos.
         </p>
         <ul>
             <li>
                 <p>
-                    <b>Processo</b> - será representado pelo quadrado com cores diferentes.
+                    <b>Tarefa</b> - será representado pelo quadrado com cores diferentes.
                 </p>
             </li>
             <li>
@@ -27,7 +25,7 @@ export function Ilustracao() {
             </li>
             <li>
                 <p>
-                    Os processos usam o recurso da cor em que estão pintados.
+                    As tarefas usam o recurso da cor em que estão pintados.
                 </p>
             </li>
             <li>

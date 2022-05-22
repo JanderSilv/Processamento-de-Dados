@@ -65,8 +65,8 @@ export function ParallelismSection() {
           <Card
             color={colors.background.green.normal}
             banner={concorrencia}
-            title="Paralelismo e Concorrência"
-            subtitle="Como é feita a gestão de recurso?"
+            title="Paralelismo vs Concorrência"
+            subtitle="São a mesma coisa?"
             onClick={openParalelismEConcurrentSubject}
           />
           {/* @todo - adicionem seus cards aq, companheiros */}
