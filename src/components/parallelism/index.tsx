@@ -14,7 +14,7 @@ import { Container, Header, Title, Text, I, U, B, ProcessorImage, Cards, Navigat
 import { expandedSubjects, subjectColors } from './constants'
 
 // assets
-import { flynn } from './assets'
+import { flynn, cpuCores } from './assets'
 
 // enums
 import { Subjects } from './enums'
@@ -28,6 +28,10 @@ export function ParallelismSection() {
 
   function openFlynnsTaxonomySubject() {
     setCurrentSubject(Subjects.FLYNNS_TAXONOMY)
+  }
+
+  function openWhenToUseParallelismSubject() {
+    setCurrentSubject(Subjects.WHEN_TO_USE_PARALLELISM)
   }
 
   function renderSubjectsNavigator() {
@@ -58,7 +62,14 @@ export function ParallelismSection() {
             subtitle="Como classificar as arquiteturas?"
             onClick={openFlynnsTaxonomySubject}
           />
-          {/* @todo - adicionem seus cards aq, companheiros */}
+
+          <Card
+            color={colors.background.purple.normal}
+            banner={cpuCores}
+            title="Devo paralelizar?"
+            subtitle="Aumentando a eficiência dos núcleos"
+            onClick={openWhenToUseParallelismSubject}
+          />
         </Cards>
       )
 
