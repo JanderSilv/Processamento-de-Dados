@@ -14,7 +14,7 @@ import { Container, Header, Title, Text, I, U, B, ProcessorImage, Cards, Navigat
 import { expandedSubjects, subjectColors } from './constants'
 
 // assets
-import { flynn } from './assets'
+import { flynn, concorrencia } from './assets'
 
 // enums
 import { Subjects } from './enums'
@@ -24,6 +24,10 @@ export function ParallelismSection() {
 
   function openFlynnsTaxonomySubject() {
     setCurrentSubject(Subjects.FLYNNS_TAXONOMY)
+  }
+
+  function openParalelismEConcurrentSubject() {
+    setCurrentSubject(Subjects.PARALLELISM_VS_CONCURRENCE)
   }
 
   function renderSubjectsNavigator() {
@@ -53,6 +57,13 @@ export function ParallelismSection() {
             title="Taxonomia de Flynn"
             subtitle="Como classificar as arquiteturas?"
             onClick={openFlynnsTaxonomySubject}
+          />
+          <Card
+            color={colors.background.purple.normal}
+            banner={concorrencia}
+            title="Paralelismo e Concorrência"
+            subtitle="Como é feita a gestão de recurso?"
+            onClick={openParalelismEConcurrentSubject}
           />
           {/* @todo - adicionem seus cards aq, companheiros */}
         </Cards>
