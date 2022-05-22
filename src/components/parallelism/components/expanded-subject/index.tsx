@@ -1,35 +1,68 @@
 // styles
-import { Container, GoBack, Navigator, NavigatorBullet } from './styles'
+import {
+  Container,
+  GoBack,
+  LeftArrowIcon,
+  Navigator,
+  NavigatorBullet,
+  NextButton,
+  NextContainer,
+  PreviousButton,
+  PreviousContainer,
+  RightArrowIcon,
+} from './styles'
 
 // types
 import { ExpandedSubjectProps } from './types'
 
 export function ExpandedSubject(props: ExpandedSubjectProps) {
-  const { currentPage, numberOfPages, color, className, children, onGoBackButtonClick } = props
+  const { currentPage, numberOfPages, color, className, children, onGoBackButtonClick, onClickPrevious, onClickNext } =
+    props
 
   function renderNavigation() {
     const bullets: JSX.Element[] = []
 
     for (let i = 0; i < numberOfPages; i++) {
-      bullets.push(<NavigatorBullet active={i === currentPage} />)
+      bullets.push(<NavigatorBullet key={i} active={i === currentPage} />)
     }
 
     return <Navigator>{bullets}</Navigator>
   }
 
   function renderGoPrevious() {
-    return null
+    if (currentPage === 0) return null
+
+    return (
+      <PreviousContainer onClick={onClickPrevious}>
+        <PreviousButton>
+          <LeftArrowIcon />
+        </PreviousButton>
+      </PreviousContainer>
+    )
+  }
+
+  function renderGoNext() {
+    if (currentPage === numberOfPages - 1) return null
+
+    return (
+      <NextContainer onClick={onClickNext}>
+        <NextButton>
+          <RightArrowIcon />
+        </NextButton>
+      </NextContainer>
+    )
   }
 
   return (
     <Container className={className} color={color}>
-      <GoBack onClick={onGoBackButtonClick} />
-
       {children}
 
       {renderNavigation()}
 
       {renderGoPrevious()}
+      {renderGoNext()}
+
+      <GoBack onClick={onGoBackButtonClick} />
     </Container>
   )
 }

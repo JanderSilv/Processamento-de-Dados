@@ -28,9 +28,7 @@ export const ImageContainer = styled.div`
   margin: -3rem -6rem -3rem 0;
 `
 
-export const Image = styled.img.attrs({
-  src: flynn.src,
-})`
+export const Image = styled.img`
   width: 40rem;
   height: 100%;
 
