@@ -63,7 +63,7 @@ export function ParallelismSection() {
             onClick={openFlynnsTaxonomySubject}
           />
           <Card
-            color={colors.background.purple.normal}
+            color={colors.background.green.normal}
             banner={concorrencia}
             title="Paralelismo e Concorrência"
             subtitle="Como é feita a gestão de recurso?"
