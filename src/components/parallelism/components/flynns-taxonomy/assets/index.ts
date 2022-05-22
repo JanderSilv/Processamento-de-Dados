@@ -1,0 +1,8 @@
+export { default as gpus } from './gpus.png'
+export { default as ibmComputer } from './ibm-computer.png'
+export { default as intelPhi } from './intel-phi.png'
+export { default as mimd } from './mimd.png'
+export { default as misd } from './misd.png'
+export { default as simd } from './simd.png'
+export { default as sisd } from './sisd.png'
+export { default as spaceShuttle } from './space-shuttle.png'

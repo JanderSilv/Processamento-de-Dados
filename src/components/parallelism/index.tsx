@@ -22,6 +22,10 @@ import { Subjects } from './enums'
 export function ParallelismSection() {
   const [currentSubject, setCurrentSubject] = React.useState<Subjects>()
 
+  function closeSubject() {
+    setCurrentSubject(undefined)
+  }
+
   function openFlynnsTaxonomySubject() {
     setCurrentSubject(Subjects.FLYNNS_TAXONOMY)
   }
@@ -71,7 +75,7 @@ export function ParallelismSection() {
 
     const ExpandedSubject = expandedSubjects[currentSubject]
 
-    return <ExpandedSubject />
+    return <ExpandedSubject onGoBackButtonClick={closeSubject} />
   }
 
   return (
