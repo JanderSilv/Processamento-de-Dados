@@ -1,6 +1,7 @@
 import { css } from 'src/styles/stitches.config'
 
 export const nodeDialogContent = css({
+  height: '100%',
   padding: '$10 $7',
   color: 'white',
   borderRadius: 20,
