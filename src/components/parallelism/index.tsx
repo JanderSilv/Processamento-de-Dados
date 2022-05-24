@@ -14,7 +14,7 @@ import { Container, Header, Title, Text, I, U, B, ProcessorImage, Cards, Navigat
 import { expandedSubjects, subjectColors } from './constants'
 
 // assets
-import { flynn, cpuCores } from './assets'
+import { flynn, cpuCores, concorrencia } from './assets'
 
 // enums
 import { Subjects } from './enums'
@@ -28,6 +28,10 @@ export function ParallelismSection() {
 
   function openFlynnsTaxonomySubject() {
     setCurrentSubject(Subjects.FLYNNS_TAXONOMY)
+  }
+
+  function openParalelismEConcurrentSubject() {
+    setCurrentSubject(Subjects.PARALLELISM_VS_CONCURRENCE)
   }
 
   function openWhenToUseParallelismSubject() {
@@ -62,7 +66,14 @@ export function ParallelismSection() {
             subtitle="Como classificar as arquiteturas?"
             onClick={openFlynnsTaxonomySubject}
           />
-
+          <Card
+            color={colors.background.green.normal}
+            banner={concorrencia}
+            title="Paralelismo vs Concorrência"
+            subtitle="São a mesma coisa?"
+            onClick={openParalelismEConcurrentSubject}
+          />
+          {/* @todo - adicionem seus cards aq, companheiros */}
           <Card
             color={colors.background.purple.normal}
             banner={cpuCores}
