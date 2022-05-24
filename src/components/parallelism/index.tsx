@@ -14,7 +14,7 @@ import { Container, Header, Title, Text, I, U, B, ProcessorImage, Cards, Navigat
 import { expandedSubjects, subjectColors } from './constants'
 
 // assets
-import { flynn, concorrencia } from './assets'
+import { flynn, cpuCores, concorrencia } from './assets'
 
 // enums
 import { Subjects } from './enums'
@@ -32,6 +32,10 @@ export function ParallelismSection() {
 
   function openParalelismEConcurrentSubject() {
     setCurrentSubject(Subjects.PARALLELISM_VS_CONCURRENCE)
+  }
+
+  function openWhenToUseParallelismSubject() {
+    setCurrentSubject(Subjects.WHEN_TO_USE_PARALLELISM)
   }
 
   function renderSubjectsNavigator() {
@@ -70,6 +74,13 @@ export function ParallelismSection() {
             onClick={openParalelismEConcurrentSubject}
           />
           {/* @todo - adicionem seus cards aq, companheiros */}
+          <Card
+            color={colors.background.purple.normal}
+            banner={cpuCores}
+            title="Devo paralelizar?"
+            subtitle="Aumentando a eficiência dos núcleos"
+            onClick={openWhenToUseParallelismSubject}
+          />
         </Cards>
       )
 
