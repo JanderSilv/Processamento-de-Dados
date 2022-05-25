@@ -14,7 +14,7 @@ import { Container, Header, Title, Text, I, U, B, ProcessorImage, Cards, Navigat
 import { expandedSubjects, subjectColors } from './constants'
 
 // assets
-import { flynn, cpuCores, concorrencia } from './assets'
+import { flynn, cpuCores, concorrencia, bannerGPU_vs_CPU } from './assets'
 
 // enums
 import { Subjects } from './enums'
@@ -36,6 +36,10 @@ export function ParallelismSection() {
 
   function openWhenToUseParallelismSubject() {
     setCurrentSubject(Subjects.WHEN_TO_USE_PARALLELISM)
+  }
+
+  function openCPU_vs_GPU(){
+    setCurrentSubject(Subjects.CPU_VS_GPU)
   }
 
   function renderSubjectsNavigator() {
@@ -80,6 +84,13 @@ export function ParallelismSection() {
             title="Devo paralelizar?"
             subtitle="Aumentando a eficiência dos núcleos"
             onClick={openWhenToUseParallelismSubject}
+          />
+          <Card 
+            color={colors.background.red.normal}
+            banner= {bannerGPU_vs_CPU}
+            title= "GPU versus CPU"
+            subtitle="Placas gráficas ou Processadores?"
+            onClick={openCPU_vs_GPU}
           />
         </Cards>
       )

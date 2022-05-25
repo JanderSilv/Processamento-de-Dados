@@ -1,0 +1,5 @@
+export { default as glowingCPU } from './glowingCPU.png'
+export { default as GPUs } from './placasdeVideo.jpg'
+export { default as Core } from './Core.jpg'
+export { default as Comparison } from './Comparison.png'
+export { default as Example } from './Example.png'

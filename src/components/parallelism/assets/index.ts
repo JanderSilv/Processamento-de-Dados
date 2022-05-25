@@ -7,5 +7,6 @@ import { default as tempo2 } from "./tempo2.png";
 import { default as tempo3 } from "./tempo3.png";
 import { default as cpuCores } from './cpu-cores.jpg'
 import { default as processorIntel } from './processor-intel.png'
+import {default as bannerGPU_vs_CPU} from './bannerGPU_vs_CPU.png'
 
-export { flynn, processorIntel, concorrencia, introConcorrencia, tempo0, tempo1, tempo2, tempo3, cpuCores };
+export { bannerGPU_vs_CPU, flynn, processorIntel, concorrencia, introConcorrencia, tempo0, tempo1, tempo2, tempo3, cpuCores };
