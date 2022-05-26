@@ -13,7 +13,7 @@ import ReactFlow, {
 
 import { Dialog } from '../../dialog'
 import { NodeCard, NodeCardProps } from '../node-card'
-import { NodesAndEdges } from '../data'
+import { makeNodesAndEdges, NodesAndEdges } from '../data'
 import { quantumComputingClass } from './styles'
 import { NodeDialogContent } from '../node-dialog-content'
 
@@ -23,8 +23,8 @@ export type QuantumComputingProps = {
 
 const nodeTypes = { card: NodeCard }
 
-export const Flow = ({ nodesAndEdges }: QuantumComputingProps) => {
-  const { contentEdges, contentNodes } = nodesAndEdges
+export const Flow = () => {
+  const { contentEdges, contentNodes } = makeNodesAndEdges()
 
   const [nodes, setNodes, onNodesChange] = useNodesState(contentNodes)
   const [edges, setEdges, onEdgesChange] = useEdgesState(contentEdges)
@@ -84,6 +84,7 @@ export const Flow = ({ nodesAndEdges }: QuantumComputingProps) => {
             }}
             nodeColor={n => {
               if (n.style?.background) return n.style.background.toString()
+              if (n.type === 'card') return '#0041d0'
               return '#fff'
             }}
             nodeBorderRadius={2}

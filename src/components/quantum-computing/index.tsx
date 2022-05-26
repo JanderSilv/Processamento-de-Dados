@@ -1,11 +1,11 @@
 import { Banner } from './banner'
-import { Flow, QuantumComputingProps } from './flow'
+import { Flow } from './flow'
 
-export const QuantumComputing = ({ nodesAndEdges }: QuantumComputingProps) => {
+export const QuantumComputing = () => {
   return (
     <section>
       <Banner />
-      <Flow nodesAndEdges={nodesAndEdges} />
+      <Flow />
     </section>
   )
 }

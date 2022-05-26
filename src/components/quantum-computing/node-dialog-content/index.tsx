@@ -1,22 +1,10 @@
 import { Title } from '@radix-ui/react-dialog'
 import Image from 'next/image'
 import { Carousel } from 'react-responsive-carousel'
-import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import { NodeCardProps } from '../node-card'
-import { nodeDialogContent } from './styles'
-
-type ContentCarouselProps = {
-  content: string[]
-}
-
-const ContentCarousel = ({ content }: ContentCarouselProps) => (
-  <Carousel>
-    {content.map((item, index) => (
-      <p key={index} dangerouslySetInnerHTML={{ __html: item ?? '' }} />
-    ))}
-  </Carousel>
-)
+import { nodeDialogContent, nodeDialogContent__mainContent } from './styles'
 
 const defaultImage = {
   src: '/assets/quantum/quantum-computing.jpg',
@@ -27,6 +15,7 @@ const defaultImage = {
 
 export const NodeDialogContent = ({ content, image, title }: NodeCardProps) => {
   const imageData = image || defaultImage
+
   return (
     <section className={nodeDialogContent()}>
       <picture>
@@ -36,11 +25,17 @@ export const NodeDialogContent = ({ content, image, title }: NodeCardProps) => {
         <Title asChild>
           <h2>{title}</h2>
         </Title>
-        <div>
+        <div className={nodeDialogContent__mainContent()}>
           {Array.isArray(content) ? (
-            <ContentCarousel content={content} />
+            <Carousel>
+              {content.map((item, index) => (
+                <div key={index} className="ndc__carousel-item-container">
+                  {item}
+                </div>
+              ))}
+            </Carousel>
           ) : (
-            <p dangerouslySetInnerHTML={{ __html: content }} />
+            content
           )}
         </div>
       </main>

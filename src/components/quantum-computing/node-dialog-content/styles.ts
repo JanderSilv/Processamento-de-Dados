@@ -19,40 +19,73 @@ export const nodeDialogContent = css({
 
   '& > picture': {
     flex: 1,
+    '& > span': {
+      position: 'sticky !important',
+      top: 30,
+    },
   },
-
   '& > main': {
     flex: 1.5,
     width: '100%',
-    '&> h2': {
+
+    '& > h2': {
       fontSize: '$6',
     },
+  },
+})
 
-    '& p': {
-      marginTop: '$4',
-      fontSize: '$4',
-      lineHeight: '27px',
-      textAlign: 'left',
+export const nodeDialogContent__mainContent = css({
+  marginTop: '$7',
+
+  '& .mb-3': {
+    marginBottom: '$3',
+  },
+
+  '& div.ndc__carousel-item-container': {
+    minHeight: 600,
+  },
+
+  '& h3': {
+    fontSize: '$4',
+    textAlign: 'left',
+  },
+
+  '& p': {
+    marginTop: '$4',
+    fontSize: '$4',
+    lineHeight: '27px',
+    textAlign: 'left',
+  },
+
+  '& ol, & ul': {
+    paddingTop: '$1',
+    paddingLeft: '$4',
+
+    '& > li::marker': {
+      fontFamily: '$montserrat',
+    },
+    '& > li': {
+      marginTop: '$1',
+    },
+  },
+
+  '& div.iframe-container': {
+    overflow: 'hidden',
+    position: 'relative',
+
+    '&::after': {
+      content: '""',
+      paddingTop: '56.25%',
+      display: 'block',
     },
 
-    '& div.iframe-container': {
-      overflow: 'hidden',
-      position: 'relative',
-
-      '&::after': {
-        content: '""',
-        paddingTop: '56.25%',
-        display: 'block',
-      },
-
-      '&& > iframe': {
-        width: '100%',
-        height: '100%',
-        margin: 0,
-        position: 'absolute',
-        top: '0',
-        left: '0',
-      },
+    '&& > iframe': {
+      width: '100%',
+      height: '100%',
+      margin: 0,
+      position: 'absolute',
+      top: '0',
+      left: '0',
     },
   },
 })
