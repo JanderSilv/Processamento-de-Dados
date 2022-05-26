@@ -32,12 +32,30 @@ export const contentsData = [
     id: 2,
     path: 1,
     title: 'Porquê precisamos de um Computador Quântico',
-    content: '',
+    image: {
+      src: '/assets/quantum/why.png',
+      alt: 'Ilustração de duas pessoas com várias interrogações ao redor delas',
+      width: 2000,
+      height: 2000,
+      source: 'https://storyset.com/people',
+    },
+    content: (
+      <>
+        <p className="mb-3">Resolução de problemas até hoje com resposta desconhecida:</p>
+      </>
+    ),
   },
   {
     id: 3,
     path: 1,
     title: 'Porquê você (provavelmente) não precisará de um.',
+    image: {
+      src: '/assets/quantum/cancel.png',
+      alt: 'Ilustração de um homem cancelando uma compra em um aplicativo',
+      width: 952,
+      height: 936,
+      source: 'https://www.freepik.com/vectors/web-app',
+    },
     content: (
       <>
         <p>
@@ -164,7 +182,7 @@ export const contentsData = [
     title: 'Um pouquinho de física quântica',
     content: [
       <>
-        <h3>Experimento da Dupla Fenda</h3>
+        <h3>A. Experimento da Dupla Fenda</h3>
         <p>
           Considere uma divisória com duas fendas paralelas, de um lado coloca-se uma fonte de luz. Se somente uma fenda
           está aberta, a intensidade da luz na tela atinge seu máximo na posição diretamente na linha da fenda. Quando
@@ -173,7 +191,7 @@ export const contentsData = [
           quando a fonte de luz emite somente um fóton, ou seja, o mesmo padrão de franjas aparece.
         </p>
       </>,
-      <div key={2} className="iframe-container">
+      <div key={2} className="media-container">
         <iframe
           width="560"
           height="315"
@@ -184,7 +202,7 @@ export const contentsData = [
           allowFullScreen
         />
       </div>,
-      <div key={3} className="iframe-container">
+      <div key={3} className="media-container">
         <iframe
           width="560"
           height="315"
@@ -195,6 +213,27 @@ export const contentsData = [
           allowFullScreen
         />
       </div>,
+      <>
+        <h3>B. Amplitude de Probabilidade</h3>
+        <p>
+          O objetivo da mecânica quântica é prever a probabilidade de que um evento ocorra baseado em seus estados
+          iniciais e finais e nas transformações que acontecem entre esses dois estados. No experimento da dupla fenda,
+          “um fóton sai da origem S e chega à parede na posição X” é um evento.
+        </p>
+        <p>
+          A probabilidade p de um evento ocorrer é dada pela norma quadrada de um número complexo α (onde α é chamado
+          amplitude de probabilidade ou simplesmente amplitude), ou seja: p = ||α||².
+        </p>
+      </>,
+      <>
+        <h3>C. Brackets, Dirac</h3>
+        <p>
+          A notação de Dirac é utilizada para para representar a amplitude de probabilidade α devido a sua praticidade
+          em em representar transformações e estado quânticos. Devido ao símbolo 〈ψ| ser chamado de bra e o símbolo |ψ⟩
+          é chamado de ket a notação 〈Ø|ψ⟩ é chamada de bracket.
+        </p>
+        <p>No experimento da fenda dupla 〈x|s⟩ representa a amplitude do fóton sair de s e chegar em x.</p>
+      </>,
     ],
     image: {
       src: '/assets/quantum/physics.png',
@@ -241,6 +280,14 @@ export const contentsData = [
     id: 9,
     path: 2,
     title: 'Alfabeto Quântico',
+    image: {
+      src: '/assets/quantum/alphabet.jpg',
+      alt: 'Anna escreve uma mensagem para Bill usando o spin de um elétron que viaja a velocidades próximas à velocidade da luz. Se Anna e Bill usarem o procedimento usual para ler o spin (representado como o alfabeto latino padrão), Bill não conseguirá decodificar a mensagem e a comunicação falhará.',
+      width: '817',
+      height: '467',
+      source:
+        'https://medienportal.univie.ac.at/presse/aktuelle-pressemeldungen/detailansicht/artikel/a-new-alphabet-to-write-and-read-quantum-messages-with-very-fast-particles/',
+    },
     content: [
       <>
         <h3>&gt; Comunicação quântica</h3>
@@ -345,7 +392,7 @@ export const contentsData = [
       </>,
       <>
         <p className="mb-3">Mais uma vez o Gato de Schrödinger pode nos ajudar a entender esse conceito:</p>
-        <div className="iframe-container">
+        <div className="media-container">
           <iframe
             width="1280"
             height="720"
@@ -370,7 +417,31 @@ export const contentsData = [
     id: 13,
     path: 0,
     title: 'O que esperar futuramente',
-    content: '',
+    image: {
+      src: '/assets/quantum/future.jpg',
+      alt: 'Ilustração mulher com uma luneta',
+      width: 999,
+      height: 571,
+      source: 'https://www.freepik.com/vectors/future-plan',
+    },
+    content: (
+      <>
+        <p>A computação quântica tem um enorme potencial de causar importantes impactos.</p>
+        <p>
+          A partir deste sistema, torna-se possível realizar simulações com sistemas quânticos, como a fotossíntese, a
+          supercondutividade e as formações moleculares complexas. Tal aplicação representa um elemento chave para o
+          desenvolvimento medicamentos complexos e tratamentos personalizados geneticamente, bem como o aumento da
+          eficiência de meios de transportes, baterias, células solares e fertilizantes.
+        </p>
+        <p>
+          Além disso, a capacidade da computação quântica em resolver problemas como a fatoração de inteiros e a
+          computação de logaritmos discretos impulsiona a criptografia de dados a um alto nível de eficiência e
+          resistência. Estas são apenas algumas das aplicações que a computação quântica aponta. Porém, o potencial que
+          esta tecnologia tem em oferecer benefícios à sociedade ainda é ilimitado. De qubit a qubit, o futuro quântico,
+          no entanto, vai se tornando cada vez mais presente.
+        </p>
+      </>
+    ),
   },
   {
     id: 14,

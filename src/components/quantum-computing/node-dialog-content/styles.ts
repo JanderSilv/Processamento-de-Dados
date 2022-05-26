@@ -77,7 +77,7 @@ export const nodeDialogContent__mainContent = css({
     },
   },
 
-  '& div.iframe-container': {
+  '& div.media-container': {
     overflow: 'hidden',
     position: 'relative',
 
@@ -87,7 +87,7 @@ export const nodeDialogContent__mainContent = css({
       display: 'block',
     },
 
-    '&& > iframe': {
+    '&& > :is(iframe, video)': {
       width: '100%',
       height: '100%',
       margin: 0,
