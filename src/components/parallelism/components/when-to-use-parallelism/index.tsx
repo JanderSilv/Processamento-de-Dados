@@ -27,6 +27,7 @@ export function WhenToUseParallelism(props: WhenToUseParallelismProps) {
       onGoBackButtonClick={onGoBackButtonClick}
       onClickPrevious={handlePrevious}
       onClickNext={handleNext}
+      onClickPage={setCurrentPage}
     >
       {steps[currentPage]}
     </Container>

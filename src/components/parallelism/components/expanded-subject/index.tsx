@@ -16,14 +16,23 @@ import {
 import { ExpandedSubjectProps } from './types'
 
 export function ExpandedSubject(props: ExpandedSubjectProps) {
-  const { currentPage, numberOfPages, color, className, children, onGoBackButtonClick, onClickPrevious, onClickNext } =
-    props
+  const {
+    currentPage,
+    numberOfPages,
+    color,
+    className,
+    children,
+    onGoBackButtonClick,
+    onClickPrevious,
+    onClickNext,
+    onClickPage,
+  } = props
 
   function renderNavigation() {
     const bullets: JSX.Element[] = []
 
     for (let i = 0; i < numberOfPages; i++) {
-      bullets.push(<NavigatorBullet key={i} active={i === currentPage} />)
+      bullets.push(<NavigatorBullet key={i} active={i === currentPage} onClick={() => onClickPage?.(i)} />)
     }
 
     return <Navigator>{bullets}</Navigator>

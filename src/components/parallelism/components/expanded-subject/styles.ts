@@ -76,6 +76,12 @@ export const NavigatorBullet = styled.div<NavigatorBulletProps>`
 
   background: ${colors.foreground.white.light};
   opacity: ${({ active }) => (active ? 1 : 0.3)};
+  cursor: pointer;
+
+  :hover {
+    transform: scale(125%);
+    transition: 0.1s;
+  }
 `
 
 export const PreviousContainer = styled.div`

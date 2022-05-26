@@ -27,6 +27,7 @@ export function Concurrent(props: ConcurrentProps) {
       onGoBackButtonClick={onGoBackButtonClick}
       onClickPrevious={handlePrevious}
       onClickNext={handleNext}
+      onClickPage={setCurrentPage}
     >
       {steps[currentPage]}
     </Container>

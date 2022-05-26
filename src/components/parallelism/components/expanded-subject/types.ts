@@ -11,6 +11,7 @@ export interface ExpandedSubjectProps {
   onGoBackButtonClick?(): void
   onClickNext?(): void
   onClickPrevious?(): void
+  onClickPage?(page: number): void
 }
 
 export interface ContainerProps {

@@ -27,6 +27,7 @@ export function FlynnsTaxonomy(props: FlynnsTaxonomyProps) {
       onGoBackButtonClick={onGoBackButtonClick}
       onClickPrevious={handlePrevious}
       onClickNext={handleNext}
+      onClickPage={setCurrentPage}
     >
       {steps[currentPage]}
     </Container>
