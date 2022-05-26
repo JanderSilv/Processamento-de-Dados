@@ -25,7 +25,7 @@ export const overlay = css({
 
 export const content = css({
   width: '95vw',
-  maxHeight: '85vh',
+  height: '95vh',
 
   backgroundColor: '$grayTwo400',
   boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
@@ -36,10 +36,6 @@ export const content = css({
   left: '50%',
   transform: 'translate(-50%, -50%)',
   zIndex: 100,
-
-  '@sm': {
-    width: '70vw',
-  },
 
   '&:focus': { outline: 'none' },
   '@media (prefers-reduced-motion: no-preference)': {

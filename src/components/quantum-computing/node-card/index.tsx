@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import Image from 'next/image'
 import { Trigger } from '@radix-ui/react-dialog'
 import { Handle, Position } from 'react-flow-renderer'
@@ -8,13 +9,14 @@ type Image = {
   alt?: string
   width?: string | number
   height?: string | number
+  source?: string
 }
 
 export type NodeCardProps = {
   id: number
   image?: Image
   title: string
-  content: string | string[]
+  content: ReactNode
   isActive: boolean
   isLastCard: boolean
   nodes: number[]

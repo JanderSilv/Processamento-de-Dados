@@ -1,6 +1,6 @@
 import { Edge, Node } from 'react-flow-renderer'
 import { NodeCardProps } from '../node-card'
-import contentsData from './contents.json'
+import { contentsData } from './contents'
 import contentTree from './contentTree.json'
 
 export type NodesAndEdges = {
