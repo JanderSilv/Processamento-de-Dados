@@ -67,11 +67,32 @@ export const Cards = styled.div`
 
   overflow-x: scroll;
 
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     display: none;
   }
   -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: none; */
+
+  /* width */
+  ::-webkit-scrollbar {
+    height: 0.75rem;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 86rem;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 `
 
 export const Navigator = styled.div`
