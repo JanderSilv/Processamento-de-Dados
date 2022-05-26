@@ -20,15 +20,17 @@ export const NodeDialogContent = ({ content, image, title }: NodeCardProps) => {
 
   return (
     <section className={nodeDialogContent()}>
-      <picture>
-        <Image {...imageData} src={imageData.src} alt={imageData.alt} objectFit="contain" draggable="false" />
-        {imageData.source && (
-          <a href={imageData.source} target="_blank" rel="noopener noreferrer">
-            <MdOpenInNew />
-            Fonte da imagem
-          </a>
-        )}
-      </picture>
+      <div>
+        <picture>
+          <Image {...imageData} src={imageData.src} alt={imageData.alt} objectFit="contain" draggable="false" />
+          {imageData.source && (
+            <a href={imageData.source} target="_blank" rel="noopener noreferrer">
+              <MdOpenInNew />
+              Fonte da imagem
+            </a>
+          )}
+        </picture>
+      </div>
       <main>
         <Title asChild>
           <h2>{title}</h2>

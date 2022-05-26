@@ -11,19 +11,19 @@ export const nodeDialogContent = css({
   flexDirection: 'column',
   alignItems: 'stretch',
   gap: '$7',
+  overflow: 'auto',
 
   '@md': {
     paddingBlock: '$7',
     flexDirection: 'row',
   },
 
-  '& > picture': {
+  '& > div': {
     flex: 1,
-    '& > span': {
-      position: 'sticky !important',
-      top: 30,
-    },
-    '& > a': {
+    position: 'sticky !important',
+    top: 30,
+
+    '& > picture > a': {
       width: 'fit-content',
       marginTop: '$1',
       fontSize: '$2',

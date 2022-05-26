@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const contentsData = [
   {
     id: 1,
@@ -234,6 +236,20 @@ export const contentsData = [
         </p>
         <p>No experimento da fenda dupla 〈x|s⟩ representa a amplitude do fóton sair de s e chegar em x.</p>
       </>,
+      <>
+        <p className="mb-3">No vídeo abaixo, você poderá entender melhor os conceito a cerca da mecânica quântica.</p>
+        <div className="media-container">
+          <iframe
+            width="1280"
+            height="720"
+            src="https://www.youtube.com/embed/z1GCnycbMeA"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </>,
     ],
     image: {
       src: '/assets/quantum/physics.png',
@@ -246,7 +262,7 @@ export const contentsData = [
     id: 8,
     path: 2,
     title: 'Bit X Qubit',
-    content: (
+    content: [
       <>
         <p>
           Um bit é a base da informação computacional. Independente de suas representações físicas, ele sempre é lido
@@ -267,8 +283,19 @@ export const contentsData = [
           (pronunciado: &apos;ket 0&apos; and &apos;ket 1&apos;).
         </p>
         <p>O órgão francês Commissariat à l&apos;Énergie Atomique criou uma representação da superposição.</p>
-      </>
-    ),
+      </>,
+      <>
+        <p>Utilizando um exemplo, considere uma moeda.</p>
+        <p>
+          Na física convencional, essa moeda poderia ter dois estados, cara ou coroa, um ou outro. Falando de bits,
+          seria 0 ou 1.
+        </p>
+        <p>
+          Já na física quântica, imaginamos que essa moeda está girando, e enquanto está girando, há a possibilidade de
+          ser 0 e 1 ao mesmo tempo. Falando de Qubits, ele representa 0 e 1.
+        </p>
+      </>,
+    ],
     image: {
       src: '/assets/quantum/bitxqubit.jpg',
       alt: 'O bit clássico podendo ser 0 ou 1, ou um qubit pode ser 0, 1 ou uma superposição de ambos',
@@ -367,6 +394,13 @@ export const contentsData = [
       y: 'down',
     },
     title: 'Entrelaçamento Quântico',
+    image: {
+      src: '/assets/quantum/entanglement.jpg',
+      alt: 'Duas partículas se entrelaçando',
+      width: '933',
+      height: '525',
+      source: 'https://scienceexchange.caltech.edu/topics/quantum-science-explained/entanglement',
+    },
     content: [
       <>
         <p>Propriedade da mecânica quântica que precisamos alavancar para criar um computador quântico.</p>
@@ -378,31 +412,34 @@ export const contentsData = [
           Vamos ilustrar isso com um exemplo concreto, já que isso causou até mesmo um reboliço na cabeça de Einstein
           (Einstein notoriamente se referiu a esse fenômeno como &ldquo;Ação assustadora à distância&rdquo;).
         </p>
-        <p>
-          Suponha que você tenha dois elétrons, A e B. Depois de fazer com que eles interajam, seus spins opostos serão
-          automaticamente entrelaçados. Daí em diante, se o giro de A for para cima, o giro de B será para baixo, como
-          duas crianças em uma gangorra, exceto que isso vale até para você levar A e B para extremos opostos da Terra
-          (ou da galáxia). Apesar dos milhares de quilômetros (ou anos-luz) entre eles, está provado que, se A girar
-          para cima, saberá imediatamente que o giro de B é para baixo. Já aprendemos que esses sistemas não têm valores
-          precisos/únicos, mas que existem em uma superposição obscura. Se assim for, temos ainda outro problema em
-          nossas mãos, porque Einstein nos ensinou que nenhuma influência causal, como um sinal luminoso, entre dois
-          sistemas pode viajar mais rápido que a velocidade da luz. Então, o que dá? Tudo dito, eu honestamente não sei.
-          Tudo o que sabemos é que o entrelaçamento quântico é real e que você pode aproveitá-lo para fazer maravilhas.
-        </p>
       </>,
       <>
-        <p className="mb-3">Mais uma vez o Gato de Schrödinger pode nos ajudar a entender esse conceito:</p>
-        <div className="media-container">
-          <iframe
-            width="1280"
-            height="720"
-            src="https://www.youtube.com/embed/z1GCnycbMeA"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+        <p>
+          Ainda utilizando o exemplo da moeda citado no tópico de Bit x QuBit, imagine que temos agora duas moedas
+          girando, com essas duas moedas podemos representar 4 estados ao mesmo tempo.
+        </p>
+        <ol>
+          <li>Ambos Cara</li>
+          <li>Ambos Coroa</li>
+          <li>Cara e Coroa</li>
+          <li>Coroa e Cara</li>
+        </ol>
+        <p>Com 3 moedas girando, podemos representar 8 estados ao mesmo tempo.</p>
+        <p>
+          A cada moeda adicionada a esse exemplo, exponencialmente aumentamos a quantidade de estados que podem ser
+          representados.
+        </p>
+        <p>Com 50 moedas girando, podemos representar mais estados que o maior supercomputador da atualidade.</p>
+        <p className="mb-3">
+          Com 300 moedas girando, podemos representar mais estados que o número de átomos existentes no universo.
+        </p>
+        <Image
+          src="/assets/quantum/coins.jpg"
+          alt="Com 3 moedas girando, podemos representar 8 estados ao mesmo tempo."
+          width="1162"
+          height="637"
+          draggable={false}
+        />
       </>,
     ],
   },
