@@ -1,6 +1,6 @@
 import { createStitches } from '@stitches/core'
 
-export const { css, config, keyframes } = createStitches({
+export const { css, config, keyframes, getCssText } = createStitches({
   theme: {
     colors: {
       blue100: 'hsla(227, 76%, 62%, 1)',
