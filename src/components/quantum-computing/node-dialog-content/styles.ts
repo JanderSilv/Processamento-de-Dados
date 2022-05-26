@@ -23,6 +23,14 @@ export const nodeDialogContent = css({
       position: 'sticky !important',
       top: 30,
     },
+    '& > a': {
+      width: 'fit-content',
+      marginTop: '$1',
+      fontSize: '$2',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '0.5ch',
+    },
   },
   '& > main': {
     flex: 1.5,

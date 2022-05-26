@@ -9,6 +9,7 @@ type Image = {
   alt?: string
   width?: string | number
   height?: string | number
+  source?: string
 }
 
 export type NodeCardProps = {

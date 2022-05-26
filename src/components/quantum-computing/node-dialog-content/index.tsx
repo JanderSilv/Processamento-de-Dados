@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import { NodeCardProps } from '../node-card'
+import { MdOpenInNew } from 'react-icons/md'
 import { nodeDialogContent, nodeDialogContent__mainContent } from './styles'
 
 const defaultImage = {
@@ -11,6 +12,7 @@ const defaultImage = {
   alt: 'Ilustração de processador com um símbolo de um átomo',
   width: 670,
   height: 697,
+  source: '',
 }
 
 export const NodeDialogContent = ({ content, image, title }: NodeCardProps) => {
@@ -20,6 +22,12 @@ export const NodeDialogContent = ({ content, image, title }: NodeCardProps) => {
     <section className={nodeDialogContent()}>
       <picture>
         <Image {...imageData} src={imageData.src} alt={imageData.alt} objectFit="contain" draggable="false" />
+        {imageData.source && (
+          <a href={imageData.source} target="_blank" rel="noopener noreferrer">
+            <MdOpenInNew />
+            Fonte da imagem
+          </a>
+        )}
       </picture>
       <main>
         <Title asChild>
