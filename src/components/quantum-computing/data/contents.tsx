@@ -237,7 +237,10 @@ export const contentsData = [
         <p>No experimento da fenda dupla 〈x|s⟩ representa a amplitude do fóton sair de s e chegar em x.</p>
       </>,
       <>
-        <p className="mb-3">No vídeo abaixo, você poderá entender melhor os conceitos a cerca da mecânica quântica.</p>
+        <p className="mb-3">
+          No vídeo abaixo, você poderá entender melhor os conceitos a cerca da mecânica quântica, como superposição e
+          emaranhamento.
+        </p>
         <div className="media-container">
           <iframe
             width="1280"
@@ -448,6 +451,74 @@ export const contentsData = [
     path: 2,
     title: 'Exemplo Clássico x Quântico',
     content: '',
+  },
+  {
+    id: 15,
+    path: 2,
+    title: 'Infraestrutura',
+    image: {
+      src: '/assets/quantum/d-wave.jpg',
+      alt: 'Computador quântico da empresa d-wave',
+      width: '370',
+      height: '485',
+      source: 'https://www.nature.com/articles/541447b',
+    },
+    content: [
+      <>
+        <p>
+          A infraestrutura de um computador quântico consiste de sondas, sensores, trocadores de calor, cabos de dados,
+          um ou vários processadores quânticos e uma placa mãe que une todo o sistema.
+        </p>
+        <p>
+          Em um computador quântico no formato de lustre, temos várias camadas de sistemas de resfriamento para garantir
+          o funcionamento da máquina em temperaturas muito abaixo de 0°C.
+        </p>
+        <p>
+          Atualmente, para o funcionamento dessas máquinas, é utilizado uma grande infraestrutura externa que contém
+          armazenamento e filtragem para líquidos de resfriamento, computadores convencionais que monitoram o estado do
+          computador quântico e de todo o sistema, bombas a vácuo que são utilizadas para criar um ambiente termicamente
+          isolado no compartimento do computador quântico, e afins.
+        </p>
+      </>,
+      <>
+        <p className="mb-3">
+          A empresa D-Wave, em 2015, liberou 3 vídeos que explicam a composição do computador quântico deles:
+        </p>
+        <div key={4} className="media-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zDotDiK2UuY"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </>,
+      <div key={5} className="media-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/VfxNdBTH8wY"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>,
+      <div key={6} className="media-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/AGByZoYUlU0"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>,
+    ],
   },
 
   {
