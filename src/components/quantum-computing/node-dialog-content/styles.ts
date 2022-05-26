@@ -20,8 +20,11 @@ export const nodeDialogContent = css({
 
   '& > div': {
     flex: 1,
-    position: 'sticky !important',
-    top: 30,
+
+    '@md': {
+      position: 'sticky !important',
+      top: 30,
+    },
 
     '& > picture > a': {
       width: 'fit-content',

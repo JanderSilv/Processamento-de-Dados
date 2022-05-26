@@ -237,7 +237,7 @@ export const contentsData = [
         <p>No experimento da fenda dupla 〈x|s⟩ representa a amplitude do fóton sair de s e chegar em x.</p>
       </>,
       <>
-        <p className="mb-3">No vídeo abaixo, você poderá entender melhor os conceito a cerca da mecânica quântica.</p>
+        <p className="mb-3">No vídeo abaixo, você poderá entender melhor os conceitos a cerca da mecânica quântica.</p>
         <div className="media-container">
           <iframe
             width="1280"
