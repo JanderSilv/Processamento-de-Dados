@@ -19,7 +19,7 @@ export const NodeDialogContent = ({ content, image, title }: NodeCardProps) => {
   const imageData = image || defaultImage
 
   return (
-    <section className={nodeDialogContent()}>
+    <section className={nodeDialogContent({ hasShadow: imageData.src.endsWith('.jpg') })}>
       <div>
         <picture>
           <Image {...imageData} src={imageData.src} alt={imageData.alt} objectFit="contain" draggable="false" />

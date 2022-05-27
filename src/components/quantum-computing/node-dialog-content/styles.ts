@@ -18,6 +18,16 @@ export const nodeDialogContent = css({
     flexDirection: 'row',
   },
 
+  variants: {
+    hasShadow: {
+      true: {
+        '& div > picture > span': {
+          boxShadow: '1px 1px 10px rgba(0, 0, 0, 0.5)',
+        },
+      },
+    },
+  },
+
   '& > div': {
     flex: 1,
 
