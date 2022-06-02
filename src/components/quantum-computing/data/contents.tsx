@@ -282,7 +282,7 @@ export const contentsData = [
           da computação quântica.
         </p>
       </>,
-      <div className="media-container">
+      <div key={0} className="media-container">
         <iframe
           width="1280"
           height="720"
@@ -293,7 +293,7 @@ export const contentsData = [
           allowFullScreen
         />
       </div>,
-      <Link href="https://www.youtube.com/watch?v=AocpFJn36d8" openInNewTab>
+      <Link key={1} href="https://www.youtube.com/watch?v=AocpFJn36d8" openInNewTab>
         <Image
           src="/assets/quantum/simma-hilbert.jpg"
           alt="Vídeo no Youtube: Computadores quânticos em espaços de Hilbert"

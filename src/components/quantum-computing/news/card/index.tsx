@@ -22,7 +22,7 @@ export const NewsCard = (props: CardProps) => {
     <div className={newsCard()}>
       <div className={newsCard__container()}>
         <Link href={url} draggable="false" openInNewTab>
-          <Image {...image} width={400} height={221} />
+          <Image {...image} alt={image.alt} width={400} height={221} />
         </Link>
         <div className="news-card__content">
           <h3>{title}</h3>
