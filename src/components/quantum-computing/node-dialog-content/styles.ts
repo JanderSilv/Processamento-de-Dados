@@ -81,6 +81,7 @@ export const nodeDialogContent__mainContent = css({
   '& ol, & ul': {
     paddingTop: '$1',
     paddingLeft: '$4',
+    textAlign: 'left',
 
     '& > li::marker': {
       fontFamily: '$montserrat',

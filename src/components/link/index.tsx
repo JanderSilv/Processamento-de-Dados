@@ -14,10 +14,15 @@ const newTabArgs = {
 }
 
 export const Link = (props: LinkProps) => {
-  const { href, children, className, openInNewTab, ...rest } = props
+  const { href, children, className, underline, openInNewTab, ...rest } = props
 
   return (
-    <a {...rest} href={href} className={makeClassName([link(), className])} {...(openInNewTab ? newTabArgs : {})}>
+    <a
+      {...rest}
+      href={href}
+      className={makeClassName([link({ underline }), className])}
+      {...(openInNewTab ? newTabArgs : {})}
+    >
       {children || href}
     </a>
   )

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Link } from 'src/components/link'
 
 export const contentsData = [
   {
@@ -43,7 +44,28 @@ export const contentsData = [
     },
     content: (
       <>
-        <p className="mb-3">Resolução de problemas até hoje com resposta desconhecida:</p>
+        <p>
+          Existem diversos problemas ainda sem solução usando a computação clássica, seja por limitações de performance
+          ou pela limitação matemática conceitual, como por exemplo a fatoração de inteiros, o problema de isomorfismo
+          de grafos ou a A distância de rotação entre duas árvores binárias (para mais cases acesse:{' '}
+          <Link href="https://stringfixer.com/pt/List_of_unsolved_problems_in_computer_science" underline openInNewTab>
+            Unsolved Problems
+          </Link>
+          ).
+        </p>
+        <p>
+          Contudo, a computação quântica pode impulsionar tecnologias que vão além do ambiente acadêmico.As áreas em que
+          a computação quântica pode oferecer novas aplicações e desenvolvimentos vão desde a indústria farmacêutica e
+          pesquisa médica, a criação de novos materiais e até o que está sendo chamado de “finanças quânticas”.
+        </p>
+        <p>
+          Neste setor, podemos usar computação clássica e algoritmos matemáticos para fazer previsões sobre o risco
+          futuro de uma carteira ou podemos estudar o mercado de ações durante uma janela de tempo. Mas a computação
+          quântica abre uma gama completamente nova de opções a serem exploradas. Um computador quântico pode criar
+          sobreposições com múltiplas probabilidades que não podemos alcançar hoje, muito menos examinar as
+          características dessas probabilidades.
+        </p>
+        <p>Com esse tipo de aplicação, o computador quântico será muito mais eficiente que um computador clássico.</p>
       </>
     ),
   },
@@ -237,6 +259,50 @@ export const contentsData = [
         <p>No experimento da fenda dupla 〈x|s⟩ representa a amplitude do fóton sair de s e chegar em x.</p>
       </>,
       <>
+        <h3>D. Espaços de Hilbert</h3>
+        <p>
+          Espaço de Hilbert é uma generalização do espaço euclidiano que não se restringe a um número finito de
+          dimensões. É um espaço vetorial que possui produto interno, permitindo a definição de distância e ângulos.
+          Esse espaço obedece uma relação de completude, que garante que os limites existem quando esperados, o que
+          permite a facilidade de diversas definições de análise.
+        </p>
+        <p>
+          Os espaços de Hilbert permitem que, de certa maneira, noções intuitivas sejam aplicadas em espaços funcionais.
+          Por exemplo, com eles podemos generalizar os conceitos de séries de Fourier em termos de polinômios
+          ortogonais. Os espaços de Hilbert são de extrema importância para a mecânica quântica.
+        </p>
+        <p>
+          Os elementos de espaço de Hilbert abstrato são chamados de vetores. Em aplicações, eles são tipicamente
+          sequências de números complexos ou funções. Na mecânica quântica, por exemplo, um sistema físico é descrito
+          por um espaço de Hilbert complexo que contém os vetores de estado, que contém todas as informações do sistema
+          com suas complexidades.
+        </p>
+        <p>
+          É um espaço que fornece o formalismo apropriado para o estudo de conceitos da mecânica quântica e, portanto,
+          da computação quântica.
+        </p>
+      </>,
+      <div className="media-container">
+        <iframe
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/TR0RJzKZUAA"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>,
+      <Link href="https://www.youtube.com/watch?v=AocpFJn36d8" openInNewTab>
+        <Image
+          src="/assets/quantum/simma-hilbert.jpg"
+          alt="Vídeo no Youtube: Computadores quânticos em espaços de Hilbert"
+          width="1187"
+          height="667"
+          draggable={false}
+        />
+      </Link>,
+      <>
         <p className="mb-3">
           No vídeo abaixo, você poderá entender melhor os conceitos a cerca da mecânica quântica, como superposição e
           emaranhamento.
@@ -281,11 +347,6 @@ export const contentsData = [
           Os estados em que um qubit pode ser medido são conhecidos como estados básicos (ou vetores). Como é tradição
           com qualquer tipo de estado quântico, Dirac, ou notação bra-ket é usada para representá-los.
         </p>
-        <p>
-          Isso significa que dois estados básicos computacionais são convencionalmente escritos como |0&gt; e |1&gt;
-          (pronunciado: &apos;ket 0&apos; and &apos;ket 1&apos;).
-        </p>
-        <p>O órgão francês Commissariat à l&apos;Énergie Atomique criou uma representação da superposição.</p>
       </>,
       <>
         <p>Utilizando um exemplo, considere uma moeda.</p>
@@ -381,21 +442,8 @@ export const contentsData = [
     ],
   },
   {
-    id: 10,
-    path: 2,
-    translate: {
-      y: 'up',
-    },
-    title: 'Transposição de bits',
-    content: '',
-  },
-  {
     id: 11,
     path: 2,
-    translate: {
-      x: 'left',
-      y: 'down',
-    },
     title: 'Entrelaçamento Quântico',
     image: {
       src: '/assets/quantum/entanglement.jpg',
@@ -406,7 +454,6 @@ export const contentsData = [
     },
     content: [
       <>
-        <p>Propriedade da mecânica quântica que precisamos alavancar para criar um computador quântico.</p>
         <p>
           Sabe-se que, uma vez que dois sistemas quânticos interagem um com o outro, eles se tornam parceiros
           irremediavelmente entrelaçados. A partir de então, o estado de um sistema lhe dará informações precisas sobre
@@ -449,8 +496,61 @@ export const contentsData = [
   {
     id: 12,
     path: 2,
-    title: 'Exemplo Clássico x Quântico',
-    content: '',
+    title: 'Um exemplo quântico',
+    content: [
+      <>
+        <p>Sequências de qubits podem ser usadas para transmitir chaves privadas em meios não seguros.</p>
+        <p>
+          Considere a seguinte situação: Alice e Bob querem trocar uma chave secreta. Eles estão conectados por um canal
+          aberto bidirecional e um canal quântico unidirecional. As informações de ambos os canais estão sendo
+          observadas por Eve, que quer espionar a transmissão e conseguir a chave secreta que descriptografa os textos
+          enviados por Alice e Bob. O canal quântico permite que Alice envie fótons para Bob que irá medir o estado
+          quântico desses fótons. Eve, pode capturar esses fótons e medí-los e reenviá-los a Bob.
+        </p>
+        <p>
+          O processo de estabelecer uma chave secreta começa com Alice enviando uma sequência de bits para Bob. Cada bit
+          a ser enviado é codificado em um estado quˆantico do f´oton. Alice decide usar a base Vertical-Horizontal (VH)
+          (que denotaremos por ⊞ ) para codificar um bit, entretanto Alice poderia ter usado a base Oblíqua.
+        </p>
+      </>,
+      <>
+        <h3>Estágio 1: Comunicação sobre o canal quântico</h3>
+        <ol>
+          <li>Alice gera uma sequência aleatória de 0’s e 1’s para construir a chave secreta compartilhada com Bob.</li>
+          <li>
+            Para cada bit da sequência, Alice escolhe aleatoriamente um dos dois alfabetos quânticos e transmite o fóton
+            polarizado com o alfabeto.
+          </li>
+          <li>
+            Como Bob não sabe que alfabeto Alice escolheu para cada bit, escolhe aleatoriamente um dos dois para
+            realizar a medição, tendo assim 50% de chance de acertar o bit que Alice enviou.
+          </li>
+        </ol>
+      </>,
+      <>
+        <h3>Estágio 2: Comunicação sobre o canal aberto</h3>
+        <ol>
+          <li>Utilizando o canal aberto Bob envia a Alice quais alfabetos utilizou para cada bit.</li>
+          <li>Alice responde a Bob informando quais medições foram feitas com o alfabeto correto.</li>
+          <li>
+            Alice e Bob apagam todos os bits que utilizaram alfabetos diferentes, formando assim a chave inicial. Caso
+            Eve não tenha espionado a chave resultante de Alice será igual a chave resultante de Bob.
+          </li>
+          <li>
+            No canal aberto Alice e Bob comparam pequenos pedaços da chave para estimar a taxa de erro e posteriormente
+            removem os bits transmitidos no canal aberto, caso a taxa de erro seja 0 não houve espionagem e a chave
+            torna-se definitiva, caso haja pelo menos um erro durante a comparação então houve espionagem e a chave é
+            descartada e o processo deve recomeçar.
+          </li>
+        </ol>
+      </>,
+      <>
+        <h3 className="mb-3">Transmissão sem espionagem:</h3>
+        <Image src="/assets/quantum/no-spy.jpg" alt="" width="507" height="263" draggable={false} className="mb-3" />
+        <h3 className="mb-3">Transmissão com espionagem:</h3>
+        <Image src="/assets/quantum/spy.jpg" alt="" width="482" height="282" draggable={false} />
+      </>,
+    ],
   },
   {
     id: 15,
@@ -555,6 +655,13 @@ export const contentsData = [
     id: 14,
     path: 0,
     title: 'Quer saber mais sobre?',
-    content: '',
+    content: (
+      <>
+        <p className="mb-3">Saiba tudo que a IBM disponibilizou sobre computação quântica.</p>
+        <Link href="https://www.ibm.com/quantum" underline openInNewTab />
+        <p className="mb-3">Quer saber o que IBM espera do futuro da computação quântica.</p>
+        <Link href="https://research.ibm.com/blog/ibm-quantum-roadmap-2025" underline openInNewTab />
+      </>
+    ),
   },
 ]

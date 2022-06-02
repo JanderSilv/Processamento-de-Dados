@@ -74,7 +74,7 @@ export const makeNodesAndEdges = () => {
         id: `e${id}-${nodeId}`,
         source: id.toString(),
         target: nodeId.toString(),
-        style: { stroke: 'hsla(227, 76%, 62%, 0.8)' },
+        style: { stroke: 'hsla(227, 76%, 62%, 0.8)', strokeWidth: 4 },
       }
 
       contentEdges.push(edge)
