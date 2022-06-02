@@ -35,7 +35,7 @@ export const content = css({
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  zIndex: 100,
+  zIndex: 1000,
 
   '&:focus': { outline: 'none' },
   '@media (prefers-reduced-motion: no-preference)': {

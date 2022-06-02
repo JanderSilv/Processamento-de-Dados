@@ -17,6 +17,12 @@ export const banner = css({
     '& > div': {
       padding: '$7',
       flex: 1,
+      transform: 'translateY(-7rem)',
+
+      '@md': {
+        transform: 'unset',
+      },
+
       '& > h1': {
         fontSize: '$7',
         fontWeight: 'bold',

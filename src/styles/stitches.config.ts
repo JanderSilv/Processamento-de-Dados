@@ -63,7 +63,7 @@ export const { css, config, keyframes, getCssText } = createStitches({
     lineHeights: {},
     letterSpacings: {},
     sizes: {
-      limit: '1280px',
+      limit: '1440px',
     },
     borderWidths: {},
     borderStyles: {},
