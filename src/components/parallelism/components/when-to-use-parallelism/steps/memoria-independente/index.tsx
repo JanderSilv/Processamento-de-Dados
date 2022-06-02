@@ -1,5 +1,5 @@
 // styles
-import { ImageContainer, Text, Image } from '../../styles'
+import { ImageContainer, Text, Image, Embedded } from '../../styles'
 
 // assets
 import { placeholder } from '../../assets'
@@ -23,7 +23,13 @@ export function IndependentMemoryStep() {
       </Text>
 
       <ImageContainer>
-        <Image src={placeholder.src} alt="Placeholder" />
+        <Embedded
+          width={650}
+          height={366}
+          src="https://www.youtube.com/embed/mhFO0YuP1F8"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        />
       </ImageContainer>
     </>
   )
