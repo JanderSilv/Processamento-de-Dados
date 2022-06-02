@@ -1,4 +1,5 @@
 // styles
+import { Link } from 'src/components/link'
 import { ImageContainer, Text, Image } from '../../styles'
 import { glowingCPU } from '../../assets'
 
@@ -27,11 +28,11 @@ export function IntroStep() {
           Para mais informações, o link a seguir irá redirecionar a um vídeo explicativo utilizando elementos lúdicos para explicar sobre 
           cada uma.
         </p>
-        <a href='https://www.youtube.com/watch?v=nlxb1FlEMPA' target='_blank'>
+        <Link href='https://www.youtube.com/watch?v=nlxb1FlEMPA' openInNewTab>
             <strong>
               Clique aqui para ir ao vídeo!
             </strong>
-        </a>
+        </Link>
       </Text>
 
       <ImageContainer>

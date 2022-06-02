@@ -5,6 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import { NodeCardProps } from '../node-card'
 import { MdOpenInNew } from 'react-icons/md'
+import { Link } from 'src/components/link'
 import { nodeDialogContent, nodeDialogContent__mainContent } from './styles'
 
 const defaultImage = {
@@ -24,10 +25,10 @@ export const NodeDialogContent = ({ content, image, title }: NodeCardProps) => {
         <picture>
           <Image {...imageData} src={imageData.src} alt={imageData.alt} objectFit="contain" draggable="false" />
           {imageData.source && (
-            <a href={imageData.source} target="_blank" rel="noopener noreferrer">
+            <Link href={imageData.source} openInNewTab>
               <MdOpenInNew />
               Fonte da imagem
-            </a>
+            </Link>
           )}
         </picture>
       </div>

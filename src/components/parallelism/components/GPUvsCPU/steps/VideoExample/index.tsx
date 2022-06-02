@@ -1,4 +1,5 @@
 // styles
+import { Link } from 'src/components/link'
 import { Example } from '../../assets'
 import { ImageContainer, Text, Image } from '../../styles'
 
@@ -10,12 +11,12 @@ export function ExampleStep() {
         <h1>Demonstração</h1>
 
         <p>
-        A imagem ao lado, retirada <a href='https://www.youtube.com/watch?v=-P28LKWTzrI' target='_blank'>
+        A imagem ao lado, retirada <Link href='https://www.youtube.com/watch?v=-P28LKWTzrI' openInNewTab>
           <strong>
           deste video
-          </strong> </a> demonstra o poder do processamento paralelo , podemos ver o processamento concorrente da GPU, 
+          </strong> </Link> demonstra o poder do processamento paralelo , podemos ver o processamento concorrente da GPU, 
         que pinta precisamente pixel por pixel de um desenho simples, 
-        e utilizando a quantidade de núcleos de uma GPU para criar uma imagem de alta resolução.
+        e utilizando a quantiKdade de núcleos de uma GPU para criar uma imagem de alta resolução.
         </p>
 
         <p>
