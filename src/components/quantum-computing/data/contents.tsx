@@ -9,17 +9,17 @@ export const contentsData = [
     content: (
       <>
         <p>
-          Computação quântica é uma tecnologia emergente, que tenta resolver problemas difíceis demais ou até
-          impossíveis para os supercomputadores tradicionais, por meio de uma abordagem de computação baseada em uma
-          unidade básica completamente diferente: os qubits – em vez dos bits.
+          Computação quântica é uma área de estudo, que tenta resolver problemas difíceis demais ou até impossíveis para
+          os supercomputadores tradicionais, por meio de uma abordagem de computação baseada em uma unidade básica
+          completamente diferente: os qubits – em vez dos bits.
         </p>
         <p>
-          Na prática, o comportamento desses qubits permite que computadores quânticos rodem vários cálculos ao mesmo
-          tempo, com múltiplas fontes de dados, com uma escala enorme.
+          O comportamento desses qubits permite que os computadores quânticos sejam capazes de resolver cálculos em uma
+          velocidade muito maior que os computadores tradicionais.
         </p>
         <p>
           Os computadores quânticos são máquinas caras e complexas, desenvolvidas por poucas empresas. Há computadores
-          quânticos experimentais em laboratórios de universidades, em empresas privadas e startups, e também
+          quânticos experimentais em laboratórios de universidades, em empresas privadas e startups, além de
           computadores que fazem parcialmente o que um computador quântico completo faria.
         </p>
       </>
@@ -123,7 +123,8 @@ export const contentsData = [
         </p>
         <p>
           De certa forma pode-se dizer que um algoritmo quântico cria uma sobreposição de muitas possibilidades,
-          entrelaça-as com seus resultados
+          entrelaça-as com seus resultados e, por fim, faz com que as soluções ruins interfiram entre si, de forma que
+          restem apenas aquelas que nos interessam.
         </p>
       </>
     ),
@@ -344,8 +345,8 @@ export const contentsData = [
           um qubit pode ser 0, 1, ou uma superposição de ambos.
         </p>
         <p>
-          Os estados em que um qubit pode ser medido são conhecidos como estados básicos (ou vetores). Como é tradição
-          com qualquer tipo de estado quântico, Dirac, ou notação bra-ket é usada para representá-los.
+          Os estados em que um qubit pode ser medido são conhecidos como estados da base computacional (ou vetores).
+          Como é tradição com qualquer tipo de estado quântico, Dirac, ou notação bra-ket é usada para representá-los.
         </p>
       </>,
       <>
@@ -379,67 +380,15 @@ export const contentsData = [
       source:
         'https://medienportal.univie.ac.at/presse/aktuelle-pressemeldungen/detailansicht/artikel/a-new-alphabet-to-write-and-read-quantum-messages-with-very-fast-particles/',
     },
-    content: [
+    content: (
       <>
-        <h3>&gt; Comunicação quântica</h3>
         <p>
-          A teoria da informação quântica se baseia na possibilidade de escrever mensagens em uma partícula quântica e
-          lê-las de maneira confiável.
+          Cada bit precisa ser codificado em um estado quântico, a forma como a partícula será polarizada é denominada
+          alfabeto quântico a exemplo do alfabeto Vertical-Horizontal o bit 1 será polarizado |↕⟩ e o bit 0 para |↔⟩, já
+          no alfabeto Oblíquo o bit 1 é polarizado para |↗⟩ e o bit 0 é polarizado para |↖⟩.
         </p>
-        <p>
-          Se, no entanto, a partícula é relativística, o que significa que ela se move com velocidades próximas à
-          velocidade da luz, é impossível decodificar a mensagem sem ambiguidade usando as técnicas usadas hoje, e a
-          comunicação falha.
-        </p>
-        <p>
-          Pelo menos falhava até agora. Pesquisadores da Universidade de Viena e da Academia Austríaca de Ciências
-          desenvolveram uma forma de decodificar de forma confiável mensagens quânticas transmitidas em velocidades
-          extremamente altas.
-        </p>
-        <p>Isso abre novas possibilidades de aplicações tecnológicas em informação quântica e comunicação quântica.</p>
-      </>,
-      <>
-        <h3>&gt; Comunicação a velocidade da luz</h3>
-        <p>
-          Imagine a seguinte situação: Maria e João querem trocar uma mensagem usando uma propriedade de uma partícula
-          quântica, digamos o spin de um elétron, que é uma forma intrínseca da rotação dessas partículas. João precisa
-          da mensagem de Maria o mais rápido possível, de forma que Maria tem que enviar o elétron na velocidade máxima,
-          muito próximo da velocidade da luz. Dado que Maria tem o elétron em seu laboratório, em um local específico, o
-          princípio da incerteza de Heisenberg proíbe que a velocidade do elétron seja definida com precisão.
-        </p>
-        <p>
-          Quando o elétron viaja a uma velocidade extremamente alta, a interação entre a relatividade especial e a
-          física quântica faz com que o spin e a velocidade do elétron se entrelacem. Devido a essa correlação, que é
-          mais forte do que é classicamente possível, João não consegue ler o spin com o método padrão.
-        </p>
-        <p>Será que é possível que Maria e João possam melhorar sua estratégia de comunicação?</p>
-        <p>
-          Flaminia Giacomini e seus colegas obtiveram essa melhoria introduzindo uma alternativa ao alfabeto padrão
-          usado por Maria e João. A técnica garante que a mensagem, escrita por Maria e lida por João, possa ser
-          decodificada sem ambiguidade, mesmo quando a partícula se comporta tanto de acordo com a mecânica quântica,
-          por causa do princípio da incerteza de Heisenberg, quanto da relatividade especial, devido à sua velocidade
-          muito alta.
-        </p>
-      </>,
-      <>
-        <h3>&gt; Novo alfabeto quântico</h3>
-        <p>
-          O novo alfabeto consiste em uma nova definição do spin das partículas quânticas que se movem muito
-          rapidamente. Assim, a técnica modifica tanto a maneira como Maria escreve a mensagem, quanto a maneira como
-          João a lê. A chave para esta técnica é uma &ldquo;tradução&rdquo; do modo como a mensagem é escrita e lida,
-          entre o alfabeto padrão, usado quando o elétron está em repouso, e o novo alfabeto, usado quando o elétron
-          viaja muito rápido.
-        </p>
-        <p>
-          &ldquo;Estes resultados são indicativos de que esse procedimento de tradução pode desvelar novas aplicações em
-          informações quânticas relativísticas,&rdquo; disse Flaminia.
-        </p>
-        <p>
-          Por exemplo, essa técnica pode ser útil na comunicação quântica via satélite, na qual uma partícula que
-          carrega uma mensagem precisa viajar rapidamente entre dois pontos distantes.
-        </p>
-      </>,
-    ],
+      </>
+    ),
   },
   {
     id: 11,
@@ -497,6 +446,14 @@ export const contentsData = [
     id: 12,
     path: 2,
     title: 'Um exemplo quântico',
+    image: {
+      src: '/assets/quantum/alphabet.jpg',
+      alt: 'Anna escreve uma mensagem para Bill usando o spin de um elétron que viaja a velocidades próximas à velocidade da luz. Se Anna e Bill usarem o procedimento usual para ler o spin (representado como o alfabeto latino padrão), Bill não conseguirá decodificar a mensagem e a comunicação falhará.',
+      width: '817',
+      height: '467',
+      source:
+        'https://medienportal.univie.ac.at/presse/aktuelle-pressemeldungen/detailansicht/artikel/a-new-alphabet-to-write-and-read-quantum-messages-with-very-fast-particles/',
+    },
     content: [
       <>
         <p>Sequências de qubits podem ser usadas para transmitir chaves privadas em meios não seguros.</p>
