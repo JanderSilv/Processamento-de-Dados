@@ -14,7 +14,7 @@ export const newsData = [
   {
     title: 'Como o IBM Quantum está avançando na correção de erros quânticos com experimentos de hardware',
     description:
-      'A future where we correct the errors innate to computing with such sensitive hardware is where quantum computers reach their full potential. And the IBM Quantum team is making great strides with hardware-aware error correction experiments, today.',
+      'A equipe IBM Quantum está fazendo grandes progressos com experimentos de correção de erros com reconhecimento de hardware, hoje.',
     url: 'https://research.ibm.com/blog/advancing-quantum-error-correction',
     image: {
       src: '/assets/quantum/ibm-computer.webp',
