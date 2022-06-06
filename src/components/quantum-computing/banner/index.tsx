@@ -11,7 +11,7 @@ export const Banner = () => (
           Computadores quânticos são máquinas de extrema complexidade que se baseiam em conceitos da mecânica quântica
           para controle de estados. Diferentemente dos computadores convencionais que obtêm a informação a partir da
           passagem da corrente elétrica, os computadores quânticos, por sua vez, obtêm a partir de outras coisas como a
-          direção do rotação de um átomo.
+          direção de rotação de um átomo.
         </p>
       </div>
       <picture>

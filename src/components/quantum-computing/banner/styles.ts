@@ -24,6 +24,7 @@ export const banner = css({
       },
 
       '& > h1': {
+        color: '$blue100',
         fontSize: '$7',
         fontWeight: 'bold',
       },
