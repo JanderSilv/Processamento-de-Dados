@@ -462,11 +462,11 @@ export const contentsData = [
           aberto bidirecional e um canal quântico unidirecional. As informações de ambos os canais estão sendo
           observadas por Eve, que quer espionar a transmissão e conseguir a chave secreta que descriptografa os textos
           enviados por Alice e Bob. O canal quântico permite que Alice envie fótons para Bob que irá medir o estado
-          quântico desses fótons. Eve, pode capturar esses fótons e medí-los e reenviá-los a Bob.
+          quântico desses fótons. Eve, pode capturar esses fótons e medi-los e reenviá-los a Bob.
         </p>
         <p>
           O processo de estabelecer uma chave secreta começa com Alice enviando uma sequência de bits para Bob. Cada bit
-          a ser enviado é codificado em um estado quˆantico do f´oton. Alice decide usar a base Vertical-Horizontal (VH)
+          a ser enviado é codificado em um estado quântico do fóton. Alice decide usar a base Vertical-Horizontal (VH)
           (que denotaremos por ⊞ ) para codificar um bit, entretanto Alice poderia ter usado a base Oblíqua.
         </p>
       </>,
